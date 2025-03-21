@@ -1,0 +1,59 @@
+:root {
+    --green: #529f44;
+    --turquoise: #259c99;
+    --red: #e87550;
+    --yellow: #fecc00;
+    --maroon: #b7545c;
+    --blackish: #5b5b5b;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clover-organics-contact-us-page-main-container{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.clover-organics-all-content-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.clover-contact-hero-section{
+    height: calc(100vh - 80px);
+    width: 100%;
+    position: relative;
+}
+.clover-contact-hero-section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.clover-contact-contac{
+    padding: 20px;
+}

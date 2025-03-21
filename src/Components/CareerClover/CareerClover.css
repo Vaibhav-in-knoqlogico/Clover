@@ -1,0 +1,803 @@
+/* *{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+:root {
+    --green: #529f44;
+    --turquoise: #259c99;
+    --red: #e87550;
+    --yellow: #fecc00;
+    --maroon: #b7545c;
+    --blackish: #5b5b5b;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clover-career-main{
+    width: 100%;  
+    height: 100vh; 
+    
+    /* background-color: lightblue;  */
+    
+}
+
+
+.clover-career-main-top{
+    height: 100vh;     
+    width: 100%;
+    background-color: rgb(153, 153, 153);
+}
+.clover-career-main-top-image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-photo/young-businesswoman-posing-with-copy-space_23-2148826478.jpg?t=st=1741084428~exp=1741088028~hmac=d3a3c8d90d5739d4fa9654be5f83b7e8def2243de433469163d4c62370cc1cf5&w=1060');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.clover-career-main-top-image-career{
+    position:absolute;
+    display: flex;
+    top: 10%;
+    right:0%;
+    background-color: white;
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing:4px;
+    padding: 0px 50px ;
+}
+.clover-career-main-top-image-career p{
+    color: #319998;
+}
+.clover-career-main-top-image-lets-connect{
+    position: absolute;
+    background-color: #319998;
+    color: white;
+    width: 15%;
+    padding: 10px 55px 10px 10px;
+    bottom: 0%;
+    right: 0%;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.clover-career-main-top-image-lets-connect i{
+    transition: all 0.4s ease-in-out;
+
+}
+.clover-career-main-top-image-lets-connect:hover i{
+    transform: translateX(30px);
+
+}
+.clover-career-qoutation-section{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#clover-careen-join-us-now{
+  
+    padding:8px 50px 8px 50px ;
+    background-color: var(--turquoise);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+#clover-careen-join-us-now:hover{
+  
+    scale: 0.93;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.clover-career-qoutation-section-1{
+   margin-top: 100px;
+    /* background-color: #d1cfcf96; */
+    width:50%;
+    border-radius: 10px;
+}
+/* #qoutation-right{
+   width: 100%;
+   
+   color: #1e807e;
+   
+   font-size: 1.8rem;
+    text-align: right;
+    margin: 10px -20px;
+   
+}
+#qoutation-left{
+    width: 100%;
+    
+    font-size: 1.8rem;
+    color: #1e807e;
+    text-align: left;
+    margin: 10px 20px;
+ } */
+
+ #clover-qoutation{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+ }
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .clover-career-main-top-image-career {
+        font-size: 4rem;
+        padding: 0px 30px;
+    }
+
+    .clover-career-main-top-image-lets-connect {
+        width: 20%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .clover-career-main {
+        height: auto;
+    }
+
+    .clover-career-main-top {
+        height: auto;
+    }
+
+    .clover-career-main-top-image {
+        height: 60vh;
+    }
+
+    .clover-career-main-top-image-career {
+        font-size: 3rem;
+        padding: 0px 20px;
+        top: 15%;
+    }
+
+    .clover-career-main-top-image-lets-connect {
+        width: 25%;
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .clover-career-qoutation-section {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clover-career-qoutation-section-1 {
+        width: 80%;
+        margin-top: 100px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clover-career-main-top-image-career {
+        font-size: 2rem;
+        padding: 0px 15px;
+        top: 20%;
+    }
+
+    .clover-career-main-top-image-lets-connect {
+        width: 35%;
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    .clover-career-qoutation-section-1 {
+        margin-top: 50px;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    #qoutation-right,
+    #qoutation-left {
+        font-size: 1.4rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+    #clover-qoutation{
+        font-size: 15px;
+    }
+}
+  /* Parent container *//* Parent container */
+/* Parent container */
+.clover-career-pinterest-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.clover-career-pinterest-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 90%;
+    /* background-color: #000; */
+    /* margin: auto; */
+    margin-top: 120px;
+    gap: 2%
+    
+}
+.clover-career-1{
+    width:25% ;
+    height: 100%;
+    background-color: #319998;
+}
+.clover-career-2{
+    width:12% ;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5%;
+    /* background-color: #319998; */
+}
+.clover-career-3{
+    width:15% ;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5%;
+}.clover-career-4{
+    width:25% ;
+    height: 100%;
+   
+    background-color: #319998;
+}
+
+#clover-career-2-image-1{
+    height: 60%;
+    background-color: #e87550;
+}
+#clover-career-2-image-2{
+    height: 40%;
+    background-color: #00f020;
+}
+
+#clover-career-3-image-1{
+    height: 40%;
+    background-color: #e87550;
+}
+#clover-career-3-image-2{
+    height: 60%;
+    background-color: #00f020;
+}
+
+.clover-career-pinterest-iamge{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#clover-careen-benefits{
+     margin: auto;
+    padding:8px 65px 8px 65px ;
+    background-color: var(--turquoise);
+    color: white;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 100px;
+}
+#clover-careen-benefits:hover{
+    scale: 0.93;
+}
+
+
+#clover-careen-mobile-benefits{
+ display: none;   
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .clover-career-pinterest-container {
+        
+        display: none; /* Hide Pinterest layout on smaller screens */
+    }
+    #clover-careen-benefits{
+        display: none;
+    }
+    .career-carousel-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Responsive carousel container */
+    .career-carousel {
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+        width: 80%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+        overflow: hidden;
+        /* border-radius: 10px; */
+    }
+
+    .carousel-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+    #clover-careen-mobile-benefits{
+        display: block;
+        margin: auto;
+        padding:8px 65px 8px 65px ;
+        background-color: var(--turquoise);
+        color: white;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 100px;
+    }
+
+    .carousel-slide.active {
+        opacity: 1;
+    }
+
+    /* Navigation Buttons */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 2;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .prev-btn {
+        left: 10px;
+    }
+
+    .next-btn {
+        right: 10px;
+    }
+}
+
+
+.clover-career-why-join-us-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: auto;
+    width: 100%;
+    
+    /* margin: auto; */
+    /* background-color: #00f020; */
+
+}
+
+.clover-career-why-join-us-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 75%;
+    gap: 30px;
+    margin-top: 100px;
+   
+    
+    /* margin: auto; */
+    /* background-color: #0024f0; */
+}
+
+.clover-career-why-join-us-heading h1{
+    color: #000000;
+    font-weight: 500;
+    /* letter-spacing: 2px; */
+}
+.clover-career-why-join-us-cards {
+    /* margin-top: 50px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+}
+
+.clover-career-why-join-us-card-section {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: flex-start;
+    
+    padding-left: 25px;
+    flex-direction: column;
+    
+    
+    border-radius: 8px;
+    
+}
+.clover-career-why-join-us-card-section img{
+    margin-top: 10px;
+    height: 16%;
+}
+.clover-career-why-join-us-card-section h3{
+    margin-top: 20px;
+    height: 20%;
+    font-weight: 600;
+}
+.clover-career-why-join-us-card-section p{
+    
+    height: 20%;
+    padding: 15px 0px 20px 0px;
+    
+}
+/* 
+.clover-career-why-join-us-image-section {
+    display: flex;
+    width: 100%;
+    height: 400px; 
+    gap: 30px; 
+}
+
+.full-height-half-width {
+    width: 50%; 
+    height: 100%;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    gap: 30px;
+}
+
+.half-height-half-width {
+    width: 100%; 
+    height: 46%; 
+}
+
+.full-height-half-width img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.half-height-half-width img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
+#clover-career-why-join-us-open-position{
+    padding:8px 45px 8px 45px ;
+    background-color: var(--turquoise);
+    color: white;
+    transition: all 0.5s ease-in-out;
+
+}
+#clover-career-why-join-us-open-position:hover{
+    scale: 0.93;
+    
+}
+
+/* responsiveness */
+/* For tablets and smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .clover-career-why-join-us-main {
+        width: 90%; /* Reduce width for better spacing */
+    }
+
+    .clover-career-why-join-us-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3 */
+    }
+
+    /* .clover-career-why-join-us-image-section {
+        flex-direction: column; Stack image sections vertically
+        height: auto; Let height adjust dynamically
+    }
+
+    .full-height-half-width, 
+    .right-section {
+        width: 100%; Each section takes full width
+        height: auto;
+    }
+
+    .half-height-half-width {
+        height: auto; Adjust height automatically
+    } */
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .clover-career-why-join-us-cards {
+        grid-template-columns: repeat(1, 1fr); /* Stack cards in 1 column */
+    }
+
+    .clover-career-why-join-us-heading h1 {
+        font-size: 24px; /* Reduce font size */
+        letter-spacing: 2px; /* Reduce spacing */
+    }
+
+    /* .clover-career-why-join-us-image-section {
+        flex-direction: column;
+        gap: 15px; Reduce space
+    } */
+
+    /* .full-height-half-width, 
+    .right-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .half-height-half-width {
+        height: auto;
+    } */
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .clover-career-why-join-us-main {
+        width: 95%; /* Maximize space */
+    }
+
+    .clover-career-why-join-us-heading h1 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .clover-career-why-join-us-card-section {
+        padding-left: 15px; /* Reduce padding */
+    }
+
+    .clover-career-why-join-us-cards {
+        gap: 15px; /* Reduce gap between cards */
+    }
+
+    #clover-career-why-join-us-open-position {
+        padding: 6px 30px; /* Reduce button padding */
+    }
+}
+
+/* want to us our team clover */
+
+.clover-career-want-to-join-us-main {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 4rem 2rem; */
+    gap: 30px;
+    /* background-color: #f8f9fa; */
+}
+
+.clover-career-want-to-join-us-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    /* gap: 30px; */
+    /* margin-bottom: 3rem; */
+    
+
+}
+
+
+.clover-career-want-to-join-us-heading h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.clover-career-want-to-join-us-heading p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.clover-career-jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.clover-career-each-job-card {
+    background: #f3f3f3;
+    border:1px solid var(--turquoise);
+    padding: 1.5rem;
+    box-shadow: none;
+    /* border: 1px solid #e0e0e0; */
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.clover-career-job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+    border-bottom: 1px solid #B1B1AF;
+}
+
+.clover-career-job-header h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.clover-career-job-type {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.clover-career-apply-btn {
+    background-color: #e8f5e9;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.clover-career-apply-arrow {
+    width: 100%;
+    height: 100%;
+}
+
+.clover-career-apply-btn:hover {
+    transform: translateX(5px);
+}
+
+.clover-career-job-description {
+    margin-bottom: 1.5rem;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid #B1B1AF;
+    width: 100%;
+    
+}
+
+.clover-career-job-description h4 {
+    color: #333;
+    margin-bottom: 0.4rem;
+}
+
+.clover-career-job-description p {
+    color: #666;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+}
+.clover-career-job-description-end-date{
+    display: flex;
+    gap: 0.6rem;
+}
+.clover-career-job-description-end-date h4{
+    color: #333;
+    
+}
+.clover-career-job-description-end-date p{
+    color: #666;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-top: 1px;
+   
+}
+.clover-career-job-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    color: #666;
+    font-size: 0.8rem;
+    width: 100%;
+
+}
+
+.clover-career-job-location, .clover-career-job-salary {
+    display: flex;
+    align-items: center;
+  
+    
+    gap: 0.5rem;
+}
+.clover-career-job-location p, .clover-career-job-salary p{
+    margin-top: -3px;
+}
+
+
+.clover-career-view-more-container {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#clover-career-different-positions-btn {
+    padding:8px 30px 8px 30px ;
+    background-color: var(--turquoise);
+    color: white;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+
+#clover-career-different-positions-btn:hover {
+    scale: 0.93;
+}
+.clover-career-job-skills-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    color: #666;
+    
+}
+.clover-career-job-skill ,.clover-career-job-date{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .clover-career-jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .clover-career-want-to-join-us-heading h1 {
+        font-size: 2rem;
+    }
+}

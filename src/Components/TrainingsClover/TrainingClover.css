@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green: #529f44;
+    --turquoise: #259c99;
+    --red: #e87550;
+    --yellow: #fecc00;
+    --maroon: #b7545c;
+    --blackish: #5b5b5b;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clover-event-main{
+    width: 100%;  
+    height: 100vh; 
+    /* background-color: lightblue;  */
+    
+}
+
+
+.clover-event-main-top{
+    height: 100vh;     
+    width: 100%;
+    background-color: rgb(153, 153, 153);
+}
+.clover-training-main-top-image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('https://img.freepik.com/free-photo/senior-people-school-class-with-laptop-computer_23-2150105021.jpg?t=st=1740996902~exp=1741000502~hmac=7c1500566d78738634303cb294a879f79ef46d711411293f83134922b5841527&w=1060');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.clover-event-main-top-image-event{
+    position:absolute;
+    display: flex;
+    top: 10%;
+    right:0%;
+    background-color: white;
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing:4px;
+    padding: 0px 50px ;
+}
+.clover-event-main-top-image-event p{
+    color: #319998;
+}
+.clover-event-main-top-image-lets-connect{
+    position: absolute;
+    background-color: #319998;
+    color: white;
+    width: 15%;
+    padding: 10px 55px 10px 10px;
+    bottom: 0%;
+    right: 0%;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.clover-event-main-top-image-lets-connect i{
+    transition: all 0.4s ease-in-out;
+
+}
+.clover-event-main-top-image-lets-connect:hover i{
+    transform: translateX(30px);
+
+}
+.clover-event-qoutation-section{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clover-event-qoutation-section-1{
+   margin-top: 200px;
+    background-color: #d1cfcf96;
+    width:60%;
+    border-radius: 10px;
+}
+#qoutation-right{
+   width: 100%;
+   
+   color: #1e807e;
+   
+   font-size: 1.8rem;
+    text-align: right;
+    margin: 10px -20px;
+   
+}
+#qoutation-left{
+    width: 100%;
+    
+    font-size: 1.8rem;
+    color: #1e807e;
+    text-align: left;
+    margin: 10px 20px;
+ }
+
+ #clover-qoutation{
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+ }
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .clover-event-main-top-image-event {
+        font-size: 4rem;
+        padding: 0px 30px;
+    }
+
+    .clover-event-main-top-image-lets-connect {
+        width: 20%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .clover-event-main {
+        height: auto;
+    }
+
+    .clover-event-main-top {
+        height: auto;
+    }
+
+    .clover-event-main-top-image {
+        height: 60vh;
+    }
+
+    .clover-event-main-top-image-event {
+        font-size: 3rem;
+        padding: 0px 20px;
+        top: 15%;
+    }
+
+    .clover-event-main-top-image-lets-connect {
+        width: 25%;
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .clover-event-qoutation-section {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clover-event-qoutation-section-1 {
+        width: 80%;
+        margin-top: 100px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .clover-event-main-top-image-event {
+        font-size: 2rem;
+        padding: 0px 15px;
+        top: 20%;
+    }
+
+    .clover-event-main-top-image-lets-connect {
+        width: 35%;
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+
+    .clover-event-qoutation-section-1 {
+        margin-top: 50px;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    #qoutation-right,
+    #qoutation-left {
+        font-size: 1.4rem;
+        margin: 10px 0;
+        text-align: center;
+    }
+    #clover-qoutation{
+        font-size: 15px;
+    }
+}
+
+/* clover-event-hero-section */
+/* Existing CSS */.clover-event-hero-section {
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.clover-event-hero-section-cards {
+    height: 70%;
+    width: 85%;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.clover-event-coursel-section {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #319998;
+}
+
+#clover-event-coursel-event-name {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 10px 50px 10px 10px;
+    z-index: 1;
+    gap: 10px;
+    background-color: #249C9B;
+}
+
+#clover-event-coursel-event-name h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#clover-event-coursel-event-name a h6 {
+    color: rgb(241, 234, 234);
+    font-weight: 400;
+}
+
+.clover-event-image-coursal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Hides all slides except the active one */
+.carousel-images {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.clover-even-coursel-images,
+.clover-even-coursel-video {
+    opacity: 0;
+    /* transform: scale(0.95); */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clover-even-coursel-images.active,
+.clover-even-coursel-video.active {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 2px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.prev {
+    right: 12%;
+}
+
+.next {
+    right: 3%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.clover-event-content-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.clover-event-content-section-image {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 30px;
+}
+
+.clover-event-content-section-content {
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+}
+
+.clover-event-content-section-content p {
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+.clover-event-content-section-image-1 {
+    width: 50%;
+    height: 100%;
+}
+
+.clover-event-content-section-image-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.clover-event-content-section-image-1 img,
+.clover-event-content-section-image-2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .clover-event-hero-section-cards {
+        background-color: rgba(228, 227, 227, 0.5);
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    }
+
+    .clover-event-coursel-section, 
+    .clover-event-content-section {
+        width: 98%;
+        overflow: hidden;
+    }
+
+    .clover-event-content-section {
+        margin-top: -50px;
+        height: auto;
+    }
+
+    .clover-event-content-section-content p {
+        margin-top: -30px;
+        font-size: 16px;
+    }
+
+    .clover-event-content-section-image {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .clover-event-content-section-image-1, 
+    .clover-event-content-section-image-2 {
+        width: 0%; /* Fixed from 0% to 100% */
+    }
+
+    .prev { right: 15%; }
+    .next { right: 5%; }
+}
+
+@media (max-width: 768px) {
+    .clover-event-coursel-section, 
+    .clover-event-content-section {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    /* Fix image display */
+    .carousel-images {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-images img, 
+    .carousel-images video {
+        width: 100%;
+        height: auto; /* Changed from 100% to auto */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; /* Hide all images/videos */
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Show only the active image */
+    .carousel-images img.active, 
+    .carousel-images video.active {
+        opacity: 1;
+        position: relative; /* Ensures visibility */
+    }
+
+    .clover-event-content-section-image {
+        gap: 10px;
+    }
+
+    .clover-event-content-section-content {
+        margin-top: 30px;
+    }
+
+    .clover-event-content-section-content p {
+        font-size: 14px;
+    }
+
+    #clover-event-coursel-event-name {
+        padding: 4px 5px;
+        font-size: 14px;
+    }
+
+    #clover-event-coursel-event-name h3 {
+        font-size: 12px;
+    }
+
+    #clover-event-coursel-event-name a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .clover-event-hero-section {
+        margin-top: 5%;
+    }
+
+    .clover-event-hero-section-cards {
+        gap: 15px;
+    }
+
+    .clover-event-coursel-section, 
+    .clover-event-content-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Fix Carousel */
+    .carousel-images {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .carousel-images img, 
+    .carousel-images video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    /* Show only the active image */
+    .carousel-images img.active, 
+    .carousel-images video.active {
+        opacity: 1;
+        position: relative;
+    }
+
+    .prev, .next {
+        bottom: 15px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
